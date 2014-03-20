@@ -146,10 +146,10 @@
     </div>
 </script>
 <script type="text/template" id="dashboard_item_template">
-        <li class="list_items"><a href="#<%= name%>"><%= title%></a></li>
+        <li class="list_items"><a class='coco_link' href="#<%= name%>"><%= title%></a></li>
 </script>
 <script  type="text/template" id="dashboard">
-    <div id="coco_sidebar" class="coco_sidebar affix">
+    <div id="coco_sidebar">
 		<table border = '0'>
 			<tr>
 				<td style="vertical-align:top;"><div>
@@ -177,7 +177,7 @@
 		Please download the database<br>
 		by clicking on the sync button
 		</p>
-        <div id="coco_nav" class="pull-left">
+        <div id="coco_nav_add" class="pull-left">
             <ul id = "dashboard_items" class="nav nav-list" title= "Click to view, search or edit data">
         
             </ul>
@@ -194,8 +194,20 @@
 </script>
 
 <script type="text/template" id="page_layout">
-    <div id = "side_panel" class="span2 well affix" style = "height:100%; margin-left:0px;"></div>
-    <div id = "content" class="span10" ></div>
+    <div class='row-fluid'>
+		<div class='navbar span2 well' style = 'margin:0px; padding:0px 10px 0px 0px;'>
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-th-list"></span>
+			</a>
+			<div id = "side_panel" class="nav-collapse collapse">
+				<div class="container">
+				</div>
+			</div>
+		</div>
+		
+		<div id = "content" class="span10" >
+		</div>
+	</div>
 </script>
 
 <script type="text/template" id="status">
@@ -639,7 +651,7 @@
 					var person_label="";
 					person_label =person_name+"("+father_name+")";
 				%>
-                    <input type="text" class="input-xlarge" disabled id="person_row7" name="person_name" value = "<%=person_label%>">
+                    <input type="text" disabled id="person_row7" name="person_name" value = "<%=person_label%>">
                 </div>
             </div>
         </td>
@@ -1257,7 +1269,7 @@
     <div id = "notifications">
         
     </div>
-    <div id="app">
+    <div id="app" class='container-fluid' style='padding:0px;'>
     </div>
 	
 	

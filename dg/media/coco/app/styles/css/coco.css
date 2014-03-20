@@ -24,6 +24,11 @@
 	font-style: italic;
 }
 
+.coco_link{
+	color: #0088cc;
+	padding-bottom:0px;
+}
+
 #coco_content {
     padding-top: 20px;
 }
@@ -89,10 +94,7 @@
 }
 
 #content{
-	padding-top:20px;
-	padding-bottom:20px;
-	padding-right:50px;
-	padding-left:230px;
+	
 }
 
 #change_user{
@@ -105,6 +107,7 @@
 	clear: both;
 	padding-top: 40px;
 	font-size: 11px;
+	padding-left: 15px;
 }
 
 div.dataTables_length label {
