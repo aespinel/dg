@@ -932,7 +932,7 @@ function() {
     };
 
     var misc = {
-        download_chunk_size: 2000,
+        download_chunk_size: 10000,
         background_download_interval: 5 * 60 * 1000,
         inc_download_url: "/get_log/",
         afterFullDownload: function(start_time, download_status){
